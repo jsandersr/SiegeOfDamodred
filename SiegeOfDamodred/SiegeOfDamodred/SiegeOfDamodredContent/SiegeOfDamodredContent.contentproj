@@ -1,0 +1,2360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{98ABFEC0-33E0-43A3-85E9-8D095F15F3F1}</ProjectGuid>
+    <ProjectTypeGuids>{96E2B04D-8817-42c6-938A-82C39BA4D311};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+    <ContentRootDirectory>Content</ContentRootDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>SiegeOfDamodredContent</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.FBXImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.AudioImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Placeholders\Menu\" />
+    <Folder Include="Sprites\UserInterface\MenuTextures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\ArcaneMage\Mage - Arcane Attack.wav">
+      <Name>Mage - Arcane Attack</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\ArcaneMage\Mage - Arcane Blast.wav">
+      <Name>Mage - Arcane Blast</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\ArcaneMage\Mage Attack Grunt.wav">
+      <Name>Mage Attack Grunt</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\ArcaneMage\Mage Death 1.wav">
+      <Name>Mage Death 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\ArcaneMage\Mage Death 2.wav">
+      <Name>Mage Death 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\ArcaneMage\Mage Struck 1.wav">
+      <Name>Mage Struck 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\ArcaneMage\Mage Struck 2.wav">
+      <Name>Mage Struck 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\AxeThrower\Axe Throw.wav">
+      <Name>Axe Throw</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\AxeThrower\Axe Whoosh Loop.wav">
+      <Name>Axe Whoosh Loop</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\AxeThrower\AxeThrower Attack 1.wav">
+      <Name>AxeThrower Attack 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\AxeThrower\AxeThrower Attack 2.wav">
+      <Name>AxeThrower Attack 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\AxeThrower\AxeThrower Death 1.wav">
+      <Name>AxeThrower Death 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\AxeThrower\AxeThrower Death 2.wav">
+      <Name>AxeThrower Death 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\AxeThrower\AxeThrower Struck 1.wav">
+      <Name>AxeThrower Struck 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\AxeThrower\AxeThrower Struck 2.wav">
+      <Name>AxeThrower Struck 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\AxeThrower\AxeThrower Struck 3.wav">
+      <Name>AxeThrower Struck 3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\Banshee\Banshee Attack.wav">
+      <Name>Banshee Attack</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Banshee\Banshee Death.wav">
+      <Name>Banshee Death</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Banshee\Banshee Skull Blast.wav">
+      <Name>Banshee Skull Blast</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Banshee\Banshee Struck 1.wav">
+      <Name>Banshee Struck 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Banshee\Banshee Struck 2.wav">
+      <Name>Banshee Struck 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\Berserker\Berserker Attack 1.wav">
+      <Name>Berserker Attack 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Berserker\Berserker Attack 2.wav">
+      <Name>Berserker Attack 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Berserker\Berserker Attack 3.wav">
+      <Name>Berserker Attack 3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Berserker\Berserker Death 1.wav">
+      <Name>Berserker Death 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Berserker\Berserker Death 2.wav">
+      <Name>Berserker Death 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Berserker\Berserker Death 3.wav">
+      <Name>Berserker Death 3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Berserker\Berserker Struck 1.wav">
+      <Name>Berserker Struck 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Berserker\Berserker Struck 2.wav">
+      <Name>Berserker Struck 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Berserker\Berserker Struck 3.wav">
+      <Name>Berserker Struck 3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Berserker\Berserker Struck 4.wav">
+      <Name>Berserker Struck 4</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Berserker\Berserker Struck 5.wav">
+      <Name>Berserker Struck 5</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\Buildings\Building Spawn.wav">
+      <Name>Building Spawn</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\ButtonClicks\Click 1.wav">
+      <Name>Click 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\ButtonClicks\Click 2.wav">
+      <Name>Click 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\ButtonClicks\Click 3.wav">
+      <Name>Click 3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\Cleric\Cleric Heal Spell.wav">
+      <Name>Cleric Heal Spell</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Cleric\Mage Death 1.wav">
+      <Name>Mage Death 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Cleric\Mage Death 2.wav">
+      <Name>Mage Death 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Cleric\Mage Struck 1.wav">
+      <Name>Mage Struck 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Cleric\Mage Struck 2.wav">
+      <Name>Mage Struck 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\DoomHound\Doom Hound Attack 1.wav">
+      <Name>Doom Hound Attack 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\DoomHound\Doom Hound Attack 2.wav">
+      <Name>Doom Hound Attack 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\DoomHound\Doom Hound Death 1.wav">
+      <Name>Doom Hound Death 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\DoomHound\Doom Hound Death 2.wav">
+      <Name>Doom Hound Death 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\DoomHound\Doom Hound Struck 1.wav">
+      <Name>Doom Hound Struck 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\Dragon\Dragon Death 1.wav">
+      <Name>Dragon Death 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Dragon\Dragon Death 2.wav">
+      <Name>Dragon Death 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Dragon\Dragon Fire Attack.wav">
+      <Name>Dragon Fire Attack</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Dragon\Dragon Fire Only.wav">
+      <Name>Dragon Fire Only</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Dragon\Dragon Struck 1.wav">
+      <Name>Dragon Struck 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Dragon\Dragon Struck 2.wav">
+      <Name>Dragon Struck 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\FireMage\Mage - Fire Blast.wav">
+      <Name>Mage - Fire Blast</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\FireMage\Mage Attack Grunt.wav">
+      <Name>Mage Attack Grunt</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\FireMage\Mage Death 1.wav">
+      <Name>Mage Death 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\FireMage\Mage Death 2.wav">
+      <Name>Mage Death 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\FireMage\Mage Struck 1.wav">
+      <Name>Mage Struck 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\FireMage\Mage Struck 2.wav">
+      <Name>Mage Struck 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\Gog\Gog Attack 1.wav">
+      <Name>Gog Attack 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Gog\Gog Attack 2.wav">
+      <Name>Gog Attack 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Gog\Gog Death 1.wav">
+      <Name>Gog Death 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Gog\Gog Death 2.wav">
+      <Name>Gog Death 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Gog\Gog Fire Blast.wav">
+      <Name>Gog Fire Blast</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Gog\Gog Struck 1.wav">
+      <Name>Gog Struck 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Gog\Gog Struck 2.wav">
+      <Name>Gog Struck 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\Hero\Hero Attack 1.wav">
+      <Name>Hero Attack 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Hero\Hero Attack 2.wav">
+      <Name>Hero Attack 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Hero\Hero Bless Spell.wav">
+      <Name>Hero Bless Spell</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Hero\Hero Curse Spell.wav">
+      <Name>Hero Curse Spell</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Hero\Hero Death.wav">
+      <Name>Hero Death</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Hero\Hero Struck 1.wav">
+      <Name>Hero Struck 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Hero\Hero Struck 2.wav">
+      <Name>Hero Struck 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Hero\Hero War Cry.wav">
+      <Name>Hero War Cry</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Hero\Level Gain.wav">
+      <Name>Level Gain</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\Imp\Imp Attack 1.wav">
+      <Name>Imp Attack 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Imp\Imp Attack 2.wav">
+      <Name>Imp Attack 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Imp\Imp Death.wav">
+      <Name>Imp Death</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Imp\Imp Spawn - Kill Them.wav">
+      <Name>Imp Spawn - Kill Them</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Imp\Imp Struck 1.wav">
+      <Name>Imp Struck 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Imp\Imp Struck 2.wav">
+      <Name>Imp Struck 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\ItemDrops\GoldDrop\Coin 1.wav">
+      <Name>Coin 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\ItemDrops\GoldDrop\Coin 2.wav">
+      <Name>Coin 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\ItemDrops\GoldDrop\Coin 3.wav">
+      <Name>Coin 3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\Necromancer\Mage Attack Grunt.wav">
+      <Name>Mage Attack Grunt</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Necromancer\Mage Death 1.wav">
+      <Name>Mage Death 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Necromancer\Mage Death 2.wav">
+      <Name>Mage Death 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Necromancer\Mage Struck 1.wav">
+      <Name>Mage Struck 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Necromancer\Mage Struck 2.wav">
+      <Name>Mage Struck 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Necromancer\Necro Life Drain 1.wav">
+      <Name>Necro Life Drain 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Necromancer\Necro Life Drain 2.wav">
+      <Name>Necro Life Drain 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Necromancer\Necro Mage Death.wav">
+      <Name>Necro Mage Death</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Necromancer\Necro Struck 1.wav">
+      <Name>Necro Struck 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Necromancer\Necro Struck 2.wav">
+      <Name>Necro Struck 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\Reaper\Reaper Death.wav">
+      <Name>Reaper Death</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Reaper\Reaper Struck 1.wav">
+      <Name>Reaper Struck 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Reaper\Reaper Struck 2.wav">
+      <Name>Reaper Struck 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\Songs\Battle Music.mp3">
+      <Name>Battle Music</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Songs\Title Theme.mp3">
+      <Name>Title Theme</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\UnitStruckSounds\Hit - Bone Snap.wav">
+      <Name>Hit - Bone Snap</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UnitStruckSounds\Hit - Punch 1.wav">
+      <Name>Hit - Punch 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UnitStruckSounds\Hit - Punch 2.wav">
+      <Name>Hit - Punch 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UnitStruckSounds\Hit - Punch 3.wav">
+      <Name>Hit - Punch 3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UnitStruckSounds\Hit - Punch 4.wav">
+      <Name>Hit - Punch 4</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UnitStruckSounds\Hit - Punch 5.wav">
+      <Name>Hit - Punch 5</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UnitStruckSounds\Hit - Wet Stab 1.wav">
+      <Name>Hit - Wet Stab 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UnitStruckSounds\Hit - Wet Stab 2.wav">
+      <Name>Hit - Wet Stab 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\UnitStruckSounds\Hit - Wet Stab 3.wav">
+      <Name>Hit - Wet Stab 3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\Wolf\Wolf Attack 1.wav">
+      <Name>Wolf Attack 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Wolf\Wolf Attack 2.wav">
+      <Name>Wolf Attack 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Wolf\Wolf Death 1.wav">
+      <Name>Wolf Death 1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Wolf\Wolf Death 2.wav">
+      <Name>Wolf Death 2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Wolf\Wolf Struck.wav">
+      <Name>Wolf Struck</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Placeholders\ButtonGroup\HeroActionButtonGroup.png">
+      <Name>HeroActionButtonGroup</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Placeholders\ButtonGroup\MainMenuGroupTexture.png">
+      <Name>MainMenuGroupTexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Placeholders\ButtonGroup\StatusWindow.png">
+      <Name>StatusWindow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Placeholders\ButtonGroup\UtilityButtonGroup.png">
+      <Name>UtilityButtonGroup</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Placeholders\ButtonTextures\Blank_Button.png">
+      <Name>Blank_Button</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Placeholders\ButtonTextures\Build_Button.png">
+      <Name>Build_Button</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Placeholders\ButtonTextures\Dragon_Structure_Button.png">
+      <Name>Dragon_Structure_Button</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Placeholders\ButtonTextures\Start_Button.png">
+      <Name>Start_Button</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Placeholders\ButtonTextures\Tutorial_Button.png">
+      <Name>Tutorial_Button</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Placeholders\Windows\StatusWindow.png">
+      <Name>StatusWindow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Placeholders\Windows\TopMenuBar.png">
+      <Name>TopMenuBar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Castle\CastleVersion1.png">
+      <Name>CastleVersion1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Cursors\Hand_pointer.png">
+      <Name>Hand_pointer</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Cursors\Sword.png">
+      <Name>Sword</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Debugging\gridOverlay.png">
+      <Name>gridOverlay</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Fonts\ConsoleFont.spritefont">
+      <Name>ConsoleFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <SubType>Designer</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Hero\HeroAttackingLeft.png">
+      <Name>HeroAttackingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Hero\HeroAttackingRight.png">
+      <Name>HeroAttackingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Hero\HeroCastBattleCryLeft.png">
+      <Name>HeroCastBattleCryLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Hero\HeroCastBattleCryRight.png">
+      <Name>HeroCastBattleCryRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Hero\HeroCastCurseLeft.png">
+      <Name>HeroCastCurseLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Hero\HeroCastCurseRight.png">
+      <Name>HeroCastCurseRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Hero\HeroCastIntimidateLeft.png">
+      <Name>HeroCastIntimidateLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Hero\HeroCastIntimidateRight.png">
+      <Name>HeroCastIntimidateRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Hero\HeroDyingLeft.png">
+      <Name>HeroDyingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Hero\HeroDyingRight.png">
+      <Name>HeroDyingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Hero\HeroIdleLeft.png">
+      <Name>HeroIdleLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Hero\HeroIdleRight.png">
+      <Name>HeroIdleRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Hero\HeroWalkingLeft.png">
+      <Name>HeroWalkingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Hero\HeroWalkingRight.png">
+      <Name>HeroWalkingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\ItemDrops\COIN.png">
+      <Name>COIN</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\ItemDrops\HealthPickupAnimation.png">
+      <Name>HealthPickupAnimation</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Levels\background_composite.png">
+      <Name>background_composite</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Levels\INFERNO.png">
+      <Name>INFERNO</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Menu\AngelOfDeath.png">
+      <Name>AngelOfDeath</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\PixelTextures\solidred.png">
+      <Name>solidred</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\PixelTextures\solidwhite.png">
+      <Name>solidwhite</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\UserInterface\ButtonGroups\background.png">
+      <Name>background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\ButtonGroups\Banner.png">
+      <Name>Banner</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\ButtonGroups\MenuButtonGroup.png">
+      <Name>MenuButtonGroup</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\ButtonGroups\StructureButtonGroup.png">
+      <Name>StructureButtonGroup</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\ButtonGroups\TopMenu.png">
+      <Name>TopMenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\BlankButton1.png">
+      <Name>BlankButton1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\BlankButton2.png">
+      <Name>BlankButton2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\BlankButton3.png">
+      <Name>BlankButton3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\BlankButton4.png">
+      <Name>BlankButton4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Next_down.png">
+      <Name>Next_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Next_no.png">
+      <Name>Next_no</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Next_up.png">
+      <Name>Next_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Return-Arrow_down.png">
+      <Name>Return-Arrow_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Return-Arrow_up.png">
+      <Name>Return-Arrow_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\Abbey_down.png">
+      <Name>Abbey_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\Abbey_no.png">
+      <Name>Abbey_no</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\Abbey_up.png">
+      <Name>Abbey_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\Armory_down.png">
+      <Name>Armory_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\Armory_no.png">
+      <Name>Armory_no</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\Armory_up.png">
+      <Name>Armory_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\Barracks_down.png">
+      <Name>Barracks_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\Barracks_no.png">
+      <Name>Barracks_no</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\Barracks_up.png">
+      <Name>Barracks_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\BonePit_down.png">
+      <Name>BonePit_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\BonePit_no.png">
+      <Name>BonePit_no</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\BonePit_up.png">
+      <Name>BonePit_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\Build_down.png">
+      <Name>Build_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\Build_up.png">
+      <Name>Build_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\Dragons_down.png">
+      <Name>Dragons_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\Dragons_no.png">
+      <Name>Dragons_no</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\Dragons_up.png">
+      <Name>Dragons_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\Library_down.png">
+      <Name>Library_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\Library_no.png">
+      <Name>Library_no</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\Library_up.png">
+      <Name>Library_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\Temple_down.png">
+      <Name>Temple_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\Temple_no.png">
+      <Name>Temple_no</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\Temple_up.png">
+      <Name>Temple_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\WolfPen_down.png">
+      <Name>WolfPen_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\WolfPen_no.png">
+      <Name>WolfPen_no</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Build\WolfPen_up.png">
+      <Name>WolfPen_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\Abbey_down.png">
+      <Name>Abbey_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\Abbey_no.png">
+      <Name>Abbey_no</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\Abbey_up.png">
+      <Name>Abbey_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\Armory_down.png">
+      <Name>Armory_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\Armory_no.png">
+      <Name>Armory_no</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\Armory_up.png">
+      <Name>Armory_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\Barracks_down.png">
+      <Name>Barracks_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\Barracks_no.png">
+      <Name>Barracks_no</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\Barracks_up.png">
+      <Name>Barracks_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\BonePit_down.png">
+      <Name>BonePit_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\BonePit_no.png">
+      <Name>BonePit_no</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\BonePit_up.png">
+      <Name>BonePit_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\Buy_down.png">
+      <Name>Buy_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\Buy_no.png">
+      <Name>Buy_no</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\Buy_up.png">
+      <Name>Buy_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\Dragons_down.png">
+      <Name>Dragons_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\Dragons_no.png">
+      <Name>Dragons_no</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\Dragons_up.png">
+      <Name>Dragons_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\Library_down.png">
+      <Name>Library_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\Library_no.png">
+      <Name>Library_no</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\Library_up.png">
+      <Name>Library_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\Temple_down.png">
+      <Name>Temple_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\Temple_no.png">
+      <Name>Temple_no</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\Temple_up.png">
+      <Name>Temple_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\WolfPen_down.png">
+      <Name>WolfPen_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\WolfPen_no.png">
+      <Name>WolfPen_no</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Purchase\WolfPen_up.png">
+      <Name>WolfPen_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Rally\FlagBlueDown.png">
+      <Name>FlagBlueDown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Rally\FlagBlueUp.png">
+      <Name>FlagBlueUp</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Rally\FlagGreenDown.png">
+      <Name>FlagGreenDown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Rally\FlagGreenUp.png">
+      <Name>FlagGreenUp</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Rally\FlagPurpleDown.png">
+      <Name>FlagPurpleDown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Rally\FlagPurpleUp.png">
+      <Name>FlagPurpleUp</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Rally\FlagRedDown.png">
+      <Name>FlagRedDown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Rally\FlagRedUp.png">
+      <Name>FlagRedUp</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Rally\FlagYellerDown.png">
+      <Name>FlagYellerDown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Rally\FlagYellerUp.png">
+      <Name>FlagYellerUp</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Rally\Rally_down.png">
+      <Name>Rally_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Rally\Rally_up.png">
+      <Name>Rally_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Spells\Spells_down.png">
+      <Name>Spells_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Spells\Spells_up.png">
+      <Name>Spells_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Upgrade\UAdown.png">
+      <Name>UAdown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Upgrade\UAup.png">
+      <Name>UAup</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Upgrade\UDdown.png">
+      <Name>UDdown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Upgrade\UDup.png">
+      <Name>UDup</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\UserInterface\Buttons\MainMenuButtons\Menu_Credits_down.png">
+      <Name>Menu_Credits_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\MainMenuButtons\Menu_Credits_up.png">
+      <Name>Menu_Credits_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\MainMenuButtons\Menu_Quit_down.png">
+      <Name>Menu_Quit_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\MainMenuButtons\Menu_Quit_up.png">
+      <Name>Menu_Quit_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\MainMenuButtons\Menu_Start_down.png">
+      <Name>Menu_Start_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\MainMenuButtons\Menu_Start_up.png">
+      <Name>Menu_Start_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\MainMenuButtons\Menu_Tutorial_down.png">
+      <Name>Menu_Tutorial_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\MainMenuButtons\Menu_Tutorial_up.png">
+      <Name>Menu_Tutorial_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\UserInterface\Buttons\RuneButtons\RuneAnimationBlue.png">
+      <Name>RuneAnimationBlue</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\RuneButtons\RuneAnimationGreen.png">
+      <Name>RuneAnimationGreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\RuneButtons\RuneAnimationPurple.png">
+      <Name>RuneAnimationPurple</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\RuneButtons\RuneAnimationRed.png">
+      <Name>RuneAnimationRed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\RuneButtons\RuneAnimationYeller.png">
+      <Name>RuneAnimationYeller</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\RuneButtons\RunesBlue.png">
+      <Name>RunesBlue</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\RuneButtons\RunesGreen.png">
+      <Name>RunesGreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\RuneButtons\RunesPurple.png">
+      <Name>RunesPurple</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\RuneButtons\RunesRed.png">
+      <Name>RunesRed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\RuneButtons\RunesYellow.png">
+      <Name>RunesYellow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\UserInterface\GlobeTextures\GlobeBox.png">
+      <Name>GlobeBox</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\GlobeTextures\HealthBar.png">
+      <Name>HealthBar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\GlobeTextures\HealthGlobeGlass.png">
+      <Name>HealthGlobeGlass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\GlobeTextures\HealthGlobeLiquid.png">
+      <Name>HealthGlobeLiquid</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\GlobeTextures\ManaGlobeGlass.png">
+      <Name>ManaGlobeGlass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\GlobeTextures\ManaGlobeLiquid.png">
+      <Name>ManaGlobeLiquid</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\GlobeTextures\SPARKLE.png">
+      <Name>SPARKLE</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\GlobeTextures\TransparencyBar.png">
+      <Name>TransparencyBar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Structures\Abbey.png">
+      <Name>Abbey</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Structures\Armory.png">
+      <Name>Armory</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Structures\Barracks.png">
+      <Name>Barracks</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Structures\BonePit.png">
+      <Name>BonePit</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Structures\DragonCave.png">
+      <Name>DragonCave</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Structures\FireTemple.png">
+      <Name>FireTemple</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Structures\Library.png">
+      <Name>Library</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Structures\WolfPen.png">
+      <Name>WolfPen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Structures\OrcCastle2.png">
+      <Name>OrcCastle2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Units\ArcaneMage\ArcaneAttackLeft.png">
+      <Name>ArcaneAttackLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\ArcaneMage\ArcaneAttackRight.png">
+      <Name>ArcaneAttackRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\ArcaneMage\ArcaneIdleLeft.png">
+      <Name>ArcaneIdleLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\ArcaneMage\ArcaneIdleRight.png">
+      <Name>ArcaneIdleRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\ArcaneMage\ArcaneMageDeathLeft.png">
+      <Name>ArcaneMageDeathLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\ArcaneMage\ArcaneMageDeathRight.png">
+      <Name>ArcaneMageDeathRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\ArcaneMage\ArcaneOrbLeft.png">
+      <Name>ArcaneOrbLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\ArcaneMage\ArcaneOrbRight.png">
+      <Name>ArcaneOrbRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\ArcaneMage\ArcaneWalkingLeft.png">
+      <Name>ArcaneWalkingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\ArcaneMage\ArcaneWalkingRight.png">
+      <Name>ArcaneWalkingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Units\AxeThrower\AxeThrowerAttackLeft.png">
+      <Name>AxeThrowerAttackLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\AxeThrower\AxeThrowerAttackRight.png">
+      <Name>AxeThrowerAttackRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\AxeThrower\AxeThrowerDyingLeft.png">
+      <Name>AxeThrowerDyingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\AxeThrower\AxeThrowerDyingRight.png">
+      <Name>AxeThrowerDyingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\AxeThrower\AxeThrowerIdleLeft.png">
+      <Name>AxeThrowerIdleLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\AxeThrower\AxeThrowerIdleRight.png">
+      <Name>AxeThrowerIdleRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\AxeThrower\AxeThrowerSpellLeft.png">
+      <Name>AxeThrowerSpellLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\AxeThrower\AxeThrowerSpellRight.png">
+      <Name>AxeThrowerSpellRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\AxeThrower\AxeThrowerWalkingLeft.png">
+      <Name>AxeThrowerWalkingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\AxeThrower\AxeThrowerWalkingRight.png">
+      <Name>AxeThrowerWalkingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Units\Banshee\BansheeAttackingLeft.png">
+      <Name>BansheeAttackingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Banshee\BansheeAttackingRight.png">
+      <Name>BansheeAttackingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Banshee\BansheeDeathLeft.png">
+      <Name>BansheeDeathLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Banshee\BansheeDeathRight.png">
+      <Name>BansheeDeathRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Banshee\BansheeWalkingLeft.png">
+      <Name>BansheeWalkingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Banshee\BansheeWalkingRight.png">
+      <Name>BansheeWalkingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Units\Berzerker\BerzerkerAttackLeft.png">
+      <Name>BerzerkerAttackLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Berzerker\BerzerkerAttackRight.png">
+      <Name>BerzerkerAttackRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Berzerker\BerzerkerDyingLeft.png">
+      <Name>BerzerkerDyingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Berzerker\BerzerkerDyingRight.png">
+      <Name>BerzerkerDyingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Berzerker\BerzerkerIdleRight.png">
+      <Name>BerzerkerIdleRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Berzerker\BerzerkerWalkingLeft.png">
+      <Name>BerzerkerWalkingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Berzerker\BerzerkerWalkingRight.png">
+      <Name>BerzerkerWalkingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Berzerker\BerzerkIdleLeft.png">
+      <Name>BerzerkIdleLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Units\Cleric\ClericDeathLeft.png">
+      <Name>ClericDeathLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Cleric\ClericDeathRight.png">
+      <Name>ClericDeathRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Cleric\ClericHealLeft.png">
+      <Name>ClericHealLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Cleric\ClericHealRight.png">
+      <Name>ClericHealRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Cleric\ClericIdleLeft.png">
+      <Name>ClericIdleLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Cleric\ClericIdleRight.png">
+      <Name>ClericIdleRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Cleric\ClericWalkingLeft.png">
+      <Name>ClericWalkingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Cleric\ClericWalkingRight.png">
+      <Name>ClericWalkingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Units\DoomHound\DoomHoundDeathLeft.png">
+      <Name>DoomHoundDeathLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\DoomHound\DoomHoundDeathRight.png">
+      <Name>DoomHoundDeathRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Units\Dragon\DragonAttackLeft.png">
+      <Name>DragonAttackLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Dragon\DragonAttackRight.png">
+      <Name>DragonAttackRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Dragon\DragonDeathLeft.png">
+      <Name>DragonDeathLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Dragon\DragonDeathRight.png">
+      <Name>DragonDeathRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Dragon\DragonFlyingLeft.png">
+      <Name>DragonFlyingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Dragon\DragonFlyingRight.png">
+      <Name>DragonFlyingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Dragon\DragonIdleLeft.png">
+      <Name>DragonIdleLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Dragon\DragonIdleRight.png">
+      <Name>DragonIdleRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Units\FireMage\FireAttackLeft.png">
+      <Name>FireAttackLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\FireMage\FireAttackRight.png">
+      <Name>FireAttackRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\FireMage\FireballLeft.png">
+      <Name>FireballLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\FireMage\FireballRight.png">
+      <Name>FireballRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\FireMage\FireIdleLeft.png">
+      <Name>FireIdleLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\FireMage\FireIdleRight.png">
+      <Name>FireIdleRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\FireMage\FireMageDeathLeft.png">
+      <Name>FireMageDeathLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\FireMage\FireMageDeathRight.png">
+      <Name>FireMageDeathRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\FireMage\FireWalkingLeft.png">
+      <Name>FireWalkingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\FireMage\FireWalkingRight.png">
+      <Name>FireWalkingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Units\Gog\GogAttackingLeft.png">
+      <Name>GogAttackingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Gog\GogAttackingRight.png">
+      <Name>GogAttackingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Gog\GogDyingLeft.png">
+      <Name>GogDyingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Gog\GogDyingRight.png">
+      <Name>GogDyingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Gog\GogWalkingLeft.png">
+      <Name>GogWalkingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Gog\GogWalkingRight.png">
+      <Name>GogWalkingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Units\Imp\ImpAttackingLeft.png">
+      <Name>ImpAttackingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Imp\ImpAttackingRight.png">
+      <Name>ImpAttackingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Imp\ImpDyingLeft.png">
+      <Name>ImpDyingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Imp\ImpDyingRight.png">
+      <Name>ImpDyingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Imp\ImpIdleLeft.png">
+      <Name>ImpIdleLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Imp\ImpIdleRight.png">
+      <Name>ImpIdleRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Imp\ImpWalkingLeft.png">
+      <Name>ImpWalkingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Imp\ImpWalkingRight.png">
+      <Name>ImpWalkingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Units\Necro\NecroAttackLeft.png">
+      <Name>NecroAttackLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Necro\NecroAttackRight.png">
+      <Name>NecroAttackRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Necro\NecroIdleLeft.png">
+      <Name>NecroIdleLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Necro\NecroIdleRight.png">
+      <Name>NecroIdleRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Necro\NecromancerDeathLeft.png">
+      <Name>NecromancerDeathLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Necro\NecromancerDeathRight.png">
+      <Name>NecromancerDeathRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Necro\NecroWalkingLeft.png">
+      <Name>NecroWalkingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Necro\NecroWalkingRight.png">
+      <Name>NecroWalkingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Necro\SkullAttackLeft.png">
+      <Name>SkullAttackLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Necro\SkullAttackRight.png">
+      <Name>SkullAttackRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Necro\SkullChompLeft.png">
+      <Name>SkullChompLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Necro\SkullChompRight.png">
+      <Name>SkullChompRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Necro\SkullReturnLeft.png">
+      <Name>SkullReturnLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Necro\SkullReturnRight.png">
+      <Name>SkullReturnRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Units\Reaper\ReapeAttackingRight.png">
+      <Name>ReapeAttackingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Reaper\ReapeDyingRIght.png">
+      <Name>ReapeDyingRIght</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Reaper\ReaperAttackingLeft.png">
+      <Name>ReaperAttackingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Reaper\ReaperDyingLeft.png">
+      <Name>ReaperDyingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Reaper\ReaperDyingRight.png">
+      <Name>ReaperDyingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Reaper\ReaperWalkingLeft.png">
+      <Name>ReaperWalkingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Reaper\ReaperWalkingRight.png">
+      <Name>ReaperWalkingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Units\Wolf\WolfAttackLeft.png">
+      <Name>WolfAttackLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Wolf\WolfAttackRight.png">
+      <Name>WolfAttackRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Wolf\WolfDyingLeft.png">
+      <Name>WolfDyingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Wolf\WolfDyingRight.png">
+      <Name>WolfDyingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Wolf\WolfIdleLeft.png">
+      <Name>WolfIdleLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Wolf\WolfIdleRight.png">
+      <Name>WolfIdleRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Wolf\WolfWalkingLeft.png">
+      <Name>WolfWalkingLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Wolf\WolfWalkingRight.png">
+      <Name>WolfWalkingRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Units\Gog\FireballLeft.png">
+      <Name>FireballLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Gog\FireballRight.png">
+      <Name>FireballRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Units\Banshee\SkullLeft.png">
+      <Name>SkullLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\Banshee\SkullRight.png">
+      <Name>SkullRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Units\DoomHound\DoomHoundAttackLeft.png">
+      <Name>DoomHoundAttackLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\DoomHound\DoomHoundAttackRight.png">
+      <Name>DoomHoundAttackRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\DoomHound\DoomHoundWalkLeft.png">
+      <Name>DoomHoundWalkLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Units\DoomHound\DoomHoundWalkRight.png">
+      <Name>DoomHoundWalkRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Upgrade\UAno.png">
+      <Name>UAno</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Upgrade\UDno.png">
+      <Name>UDno</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Spells\battleCry_down.png">
+      <Name>battleCry_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Spells\battleCry_no.png">
+      <Name>battleCry_no</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Spells\battleCry_up.png">
+      <Name>battleCry_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Spells\intimidate_down.png">
+      <Name>intimidate_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Spells\intimidate_no.png">
+      <Name>intimidate_no</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\HeroActionButtons\Spells\intimidate_up.png">
+      <Name>intimidate_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\Songs\Game Over Music.mp3">
+      <Name>Game Over Music</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+    <Compile Include="Audio\Songs\Level Complete Music.mp3">
+      <Name>Level Complete Music</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\ItemDrops\HealthDrop\Health Drop.wav">
+      <Name>Health Drop</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\Reaper\Reaper Attack.wav">
+      <Name>Reaper Attack</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Hero\LevelBanner.png">
+      <Name>LevelBanner</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\UserInterface\castleHealth_glass5.png">
+      <Name>castleHealth_glass5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\castleHealth_liquid.png">
+      <Name>castleHealth_liquid</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\settings.png">
+      <Name>settings</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\UserInterface\TopMenuTrans.png">
+      <Name>TopMenuTrans</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Credits.wmv">
+      <Name>Credits</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Tutorial\NextArrow.png">
+      <Name>NextArrow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Tutorial\PreviousArrow.png">
+      <Name>PreviousArrow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Tutorial\Tutorial2.png">
+      <Name>Tutorial2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Tutorial\Tutorial3.png">
+      <Name>Tutorial3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Tutorial\Tutorial4.png">
+      <Name>Tutorial4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\Tutorial\Tutorial5.png">
+      <Name>Tutorial5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\UserInterface\Buttons\MainMenuButtons\credits_down.png">
+      <Name>credits_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\MainMenuButtons\credits_up.png">
+      <Name>credits_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\MainMenuButtons\loadGame_down.png">
+      <Name>loadGame_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\MainMenuButtons\loadGame_up.png">
+      <Name>loadGame_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\MainMenuButtons\newGame_down_01.png">
+      <Name>newGame_down_01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\MainMenuButtons\newGame_up_01.png">
+      <Name>newGame_up_01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\MainMenuButtons\quit_down.png">
+      <Name>quit_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\MainMenuButtons\quit_up.png">
+      <Name>quit_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\MainMenuButtons\saveGame_down.png">
+      <Name>saveGame_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\MainMenuButtons\saveGame_up.png">
+      <Name>saveGame_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\MainMenuButtons\Title-Sign.png">
+      <Name>Title-Sign</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\MainMenuButtons\tutorial_down.png">
+      <Name>tutorial_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\MainMenuButtons\tutorial_up.png">
+      <Name>tutorial_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\UserInterface\ButtonGroups\bg_frame.png">
+      <Name>bg_frame</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\ButtonGroups\ButtonGroupBenny.png">
+      <Name>ButtonGroupBenny</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\ButtonGroups\TutorialNavigationButtonGroup.png">
+      <Name>TutorialNavigationButtonGroup</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Menu\MainMenuIdea1.png">
+      <Name>MainMenuIdea1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\UserInterface\Buttons\WaveButtons\quitDown.png">
+      <Name>quitDown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\WaveButtons\quitUp.png">
+      <Name>quitUp</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\WaveButtons\saveDown.png">
+      <Name>saveDown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites\UserInterface\Buttons\WaveButtons\SaveUp.png">
+      <Name>SaveUp</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\UserInterface\Buttons\WaveButtons\waveComplete.png">
+      <Name>waveComplete</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\UserInterface\ButtonGroups\TransparentBG.png">
+      <Name>TransparentBG</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\Tutorial\Tutorial1.png">
+      <Name>Tutorial1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
+  <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

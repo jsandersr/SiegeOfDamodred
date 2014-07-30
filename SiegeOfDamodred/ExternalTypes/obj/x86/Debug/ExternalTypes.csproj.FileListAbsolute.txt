@@ -1,0 +1,18 @@
+c:\users\josh\documents\visual studio 2012\Projects\SiegeOfDamodred\ExternalTypes\bin\x86\Debug\ExternalTypes.dll
+c:\users\josh\documents\visual studio 2012\Projects\SiegeOfDamodred\ExternalTypes\bin\x86\Debug\ExternalTypes.pdb
+c:\users\josh\documents\visual studio 2012\Projects\SiegeOfDamodred\ExternalTypes\obj\x86\Debug\ExternalTypes.csprojResolveAssemblyReference.cache
+c:\users\josh\documents\visual studio 2012\Projects\SiegeOfDamodred\ExternalTypes\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\josh\documents\visual studio 2012\Projects\SiegeOfDamodred\ExternalTypes\obj\x86\Debug\ExternalTypes.dll
+c:\users\josh\documents\visual studio 2012\Projects\SiegeOfDamodred\ExternalTypes\obj\x86\Debug\ExternalTypes.pdb
+G:\School Computer Backup\Josh\Documents\Visual Studio 2012\Projects\SiegeOfDamodred\ExternalTypes\bin\x86\Debug\ExternalTypes.dll
+G:\School Computer Backup\Josh\Documents\Visual Studio 2012\Projects\SiegeOfDamodred\ExternalTypes\bin\x86\Debug\ExternalTypes.pdb
+G:\School Computer Backup\Josh\Documents\Visual Studio 2012\Projects\SiegeOfDamodred\ExternalTypes\obj\x86\Debug\ExternalTypes.csprojResolveAssemblyReference.cache
+G:\School Computer Backup\Josh\Documents\Visual Studio 2012\Projects\SiegeOfDamodred\ExternalTypes\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+G:\School Computer Backup\Josh\Documents\Visual Studio 2012\Projects\SiegeOfDamodred\ExternalTypes\obj\x86\Debug\ExternalTypes.dll
+G:\School Computer Backup\Josh\Documents\Visual Studio 2012\Projects\SiegeOfDamodred\ExternalTypes\obj\x86\Debug\ExternalTypes.pdb
+C:\RepoClone\SiegeOfDamodred\SiegeOfDamodred\ExternalTypes\bin\x86\Debug\ExternalTypes.dll
+C:\RepoClone\SiegeOfDamodred\SiegeOfDamodred\ExternalTypes\bin\x86\Debug\ExternalTypes.pdb
+C:\RepoClone\SiegeOfDamodred\SiegeOfDamodred\ExternalTypes\obj\x86\Debug\ExternalTypes.csprojResolveAssemblyReference.cache
+C:\RepoClone\SiegeOfDamodred\SiegeOfDamodred\ExternalTypes\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\RepoClone\SiegeOfDamodred\SiegeOfDamodred\ExternalTypes\obj\x86\Debug\ExternalTypes.dll
+C:\RepoClone\SiegeOfDamodred\SiegeOfDamodred\ExternalTypes\obj\x86\Debug\ExternalTypes.pdb
