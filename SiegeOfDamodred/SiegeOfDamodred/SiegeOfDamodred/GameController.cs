@@ -2027,11 +2027,11 @@ namespace SiegeOfDamodred
 			//TODO: change spawn timer
 			if (WaveController.WaveNumber == 1)
 			{
-				waitTimer = 10000000;
+				waitTimer = 10000;
 			}
 			else
 			{
-				waitTimer = 500000000;
+				waitTimer = 5000;
 			}
 
 			if (RoundTimer >= waitTimer)
