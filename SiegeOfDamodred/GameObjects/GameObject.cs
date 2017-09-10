@@ -51,7 +51,7 @@ namespace GameObjects
 
     public abstract class GameObject
     {
-        private static float mScale;
+        private static float mScale = 1.0f;
         #region Animation Time Fields
 
         //Projectile intervals
@@ -576,10 +576,6 @@ namespace GameObjects
             get
             {
                 return mScale;
-            }
-            set
-            {
-                mScale = value;
             }
         }
 

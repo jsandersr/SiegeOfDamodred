@@ -48,9 +48,7 @@ namespace SiegeOfDamodred
 
 		protected override void Initialize()
 		{
-			mScale = GraphicsDevice.DisplayMode.Width / 1600f;
-
-			game = new GameController(mScale);
+			game = new GameController();
 			spriteBatch = new SpriteBatch(this.GraphicsDevice);
 			UserInterfaceController.graphics = GraphicsDevice;
 

@@ -271,7 +271,6 @@ namespace SiegeOfDamodred
 		private Texture2D mCastleHealthBarTexture;
 		private Rectangle mCastleHealthBarRectangle;
 		private Texture2D mRedBar;
-		private float mScale;
 		private Rectangle source;
 
 		public ContentManager content;
@@ -321,10 +320,8 @@ namespace SiegeOfDamodred
 
 		#region Initialize Functions
 
-		public GameController(float mScale)
+		public GameController()
 		{
-			this.mScale = mScale;
-			GameObject.Scale = mScale;
 			asyncResult = StorageDevice.BeginShowSelector(playerIndex, null, null);
 			storageDevice = StorageDevice.EndShowSelector(asyncResult);
 
@@ -333,11 +330,6 @@ namespace SiegeOfDamodred
 			{
 				storageContainer = storageDevice.EndOpenContainer(asyncResult);
 			}
-		}
-
-		public GameController()
-		{
-
 		}
 
 		public void LoadGame()
