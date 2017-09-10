@@ -162,7 +162,7 @@ namespace GameObjects
                     else
                     {
                         // Then I should apply my damage to the current target
-                        Console.WriteLine("Applying Damage");
+                        //Console.WriteLine("Applying Damage");
                         //TODO:       PlayUnitAttackLandedAudio(friendlyActor);
                         PlayMeleeUnitAttackLandedAudio(enemyActor);
                         //TODO:   PlayUnitStruckAudio((Friendly)enemyActor.TargetQueue.PeekFirst());
@@ -248,12 +248,12 @@ namespace GameObjects
                     {
                         PlayAttackAnimation(enemyActor);
 
-                        Console.WriteLine("Now I'm playing attacking Animation");
+                        //Console.WriteLine("Now I'm playing attacking Animation");
                     }
                     else
                     {
                         // Then I should apply my damage to the current target
-                        Console.WriteLine("Applying Damage");
+                        //Console.WriteLine("Applying Damage");
                         //TODO:   PlayUnitAttackLandedAudio(friendlyActor);
                         PlayMeleeUnitAttackLandedAudio(enemyActor);
                         enemyActor.EnemyAttribute.Attack();
@@ -321,7 +321,7 @@ namespace GameObjects
                     else if (AnimationTimer >= GetAnimationLength(enemyActor))
                     {
                         // Then I should apply my damage to the current target
-                        Console.WriteLine("Applying Damage");
+                        //Console.WriteLine("Applying Damage");
                         //TODO:       PlayUnitAttackLandedAudio(friendlyActor);
                         PlayMeleeUnitAttackLandedAudio(enemyActor);
 
@@ -410,7 +410,7 @@ namespace GameObjects
                     else if (AnimationTimer >= GetAnimationLength(enemyActor))
                     {
                         // Then I should apply my damage to the current target
-                        Console.WriteLine("Applying Damage");
+                        //Console.WriteLine("Applying Damage");
                         //TODO:       PlayUnitAttackLandedAudio(friendlyActor);
                         PlayMeleeUnitAttackLandedAudio(enemyActor);
 

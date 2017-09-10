@@ -157,12 +157,12 @@ namespace GameObjects
                     {
                         PlayAttackAnimation(friendlyActor);
 
-                        Console.WriteLine("Now I'm playing attacking Animation");
+                        //Console.WriteLine("Now I'm playing attacking Animation");
                     }
                     else
                     {
                         // Then I should apply my damage to the current target
-                        Console.WriteLine("Applying Damage");
+                        //Console.WriteLine("Applying Damage");
                         PlayUnitAttackLandedAudio(friendlyActor);
                         PlayUnitStruckAudio(friendlyActor, (Enemy)friendlyActor.TargetQueue.PeekFirst());
                         friendlyActor.FriendlyAttribute.Attack();
@@ -233,12 +233,12 @@ namespace GameObjects
                     {
                         PlayAttackAnimation(friendlyActor);
 
-                        Console.WriteLine("Now I'm playing attacking Animation");
+                        //Console.WriteLine("Now I'm playing attacking Animation");
                     }
                     else
                     {
                         // Then I should apply my damage to the current target
-                        Console.WriteLine("Applying Damage");
+                        //Console.WriteLine("Applying Damage");
                         PlayUnitAttackLandedAudio(friendlyActor);
                         friendlyActor.FriendlyAttribute.Attack();
                         friendlyActor.FriendlyAggroMode = FriendlyAggroMode.IDLING;
